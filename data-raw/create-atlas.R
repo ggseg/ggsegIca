@@ -74,14 +74,14 @@ usethis::use_data(ica, ica_3d,
 # make hex ----
 atlas <- ica
 
-p <- ggseg(atlas = atlas,
+p <- ggseg(atlas = dk,
            hemi = "left",
            view = "lateral",
            show.legend = FALSE,
            colour = "grey30",
            size = .2,
            mapping = aes(fill =  region)) +
-  scale_fill_brain2(palette = atlas$palette) +
+  scale_fill_brain2(palette = dk$palette) +
   theme_void() +
   hexSticker::theme_transparent()
 

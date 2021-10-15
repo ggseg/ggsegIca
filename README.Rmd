@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 # ggsegIca <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/ggseg/ggsegIca/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegIca/actions)
 <!-- badges: end -->
 
 This package contains dataset for plotting the [ica](add url here) atlas ggseg and ggseg3d. 
