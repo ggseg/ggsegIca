@@ -5,7 +5,7 @@ on:
     branches: [main, master]
     tags: ['*']
 
-name: pkgdown-pak
+name: pkgdown
 
 jobs:
   pkgdown:
