@@ -16,6 +16,7 @@ for \code{\link[ggseg:ggbrain]{ggseg::geom_brain()}}.
 }
 \examples{
 ica()
+plot(ica())
 }
 \references{
 Beckmann CF, Smith SM (2004). Probabilistic Independent
@@ -23,4 +24,5 @@ Component Analysis for Functional Magnetic Resonance Imaging. \emph{IEEE
 Transactions on Medical Imaging}, 23(2):137-152.
 \doi{10.1109/TMI.2003.822821}
 }
+\concept{cortical_atlases}
 \concept{ggseg_atlases}
