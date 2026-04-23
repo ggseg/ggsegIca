@@ -60,17 +60,8 @@ pak::pak("ggsegverse/ggsegIca")
 #| fig-height: 7
 library(ggseg)
 library(ggsegIca)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = ica(),
-    mapping = aes(fill = label),
-    position = position_brain(hemi ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = ica()$palette, na.value = "grey") +
-  theme_void()
+plot(ica())
 ```
 
 ## Data source
