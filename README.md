@@ -1,44 +1,57 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggsegIca
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+# ggsegIca <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ggsegverse/ggsegIca/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegIca/actions/workflows/R-CMD-check.yaml)
-[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegIca)](https://ggsegverse.r-universe.dev/ggsegIca)
+[![R-CMD-check](https://github.com/ggseg/ggsegIca/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegIca/actions)
+[![DOI](https://zenodo.org/badge/417492385.svg)](https://zenodo.org/badge/latestdoi/417492385)
 <!-- badges: end -->
 
-ICA Atlas for the ggsegverse Ecosystem.
+This package contains dataset for plotting the ICA atlas for ggseg.
+
+Beckmann, C. F., & Smith, S. M. (2004). Probabilistic independent
+component analysis for functional magnetic resonance imaging. IEEE
+transactions on medical imaging, 23(2), 137-152.
+[IEEE](https://ieeexplore.ieee.org/document/1263605)
+
+To learn how to use these atlases, please look at the documentation for
+[ggseg](https://ggseg.github.io/ggseg/)
 
 ## Installation
 
-``` r
-# From r-universe
-install.packages("ggsegIca", repos = "https://ggsegverse.r-universe.dev")
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-# From GitHub
-# install.packages("remotes")
-remotes::install_github("ggsegverse/ggsegIca")
+``` r
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+
+install.packages("ggsegIca")
 ```
 
-## Atlases
+You can install from [GitHub](https://github.com/) with:
 
-### ica
+``` r
+# install.packages("remotes")
+remotes::install_github("ggseg/ggsegIca")
+```
 
-Independent Component Analysis cortical parcellation.
+## Example
 
 ``` r
 library(ggsegIca)
+library(ggseg)
+
 plot(ica())
 ```
 
-<img src="man/figures/README-ica-1.png" alt="" width="100%" /> \## Data
-source
+<img src="man/figures/README-2d-plot-1.png" style="width:100.0%" />
 
-Annotation files on fsaverage5.
-
-- **Reference**: Beckmann & Smith (2004)
-  [doi:10.1109/TMI.2003.822821](https://doi.org/10.1109/TMI.2003.822821)
-
-- **Date obtained**: 2021-10-15
+Please note that the ‘ggsegIca’ project is released with a [Contributor
+Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
+you agree to abide by its terms.
