@@ -42,17 +42,8 @@ pak::pak("ggsegverse/ggsegIca")
 ``` r
 library(ggseg)
 library(ggsegIca)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = ica(),
-    mapping = aes(fill = label),
-    position = position_brain(hemi ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = ica()$palette, na.value = "grey") +
-  theme_void()
+plot(ica())
 ```
 
 <img src="man/figures/README-ica-1.png" style="width:100.0%" />

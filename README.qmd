@@ -59,6 +59,7 @@ pak::pak("ggsegverse/ggsegIca")
 #| label: ica
 #| fig-height: 7
 library(ggseg)
+library(ggsegIca)
 
 plot(ica())
 ```
