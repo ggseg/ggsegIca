@@ -9,16 +9,10 @@ describe("ica atlas", {
   })
 
   it("renders with ggseg", {
-    p <- ggplot2::ggplot() +
-      ggseg::geom_brain(
-        atlas = ica(),
-        mapping = ggplot2::aes(fill = label),
-        position = ggseg::position_brain(hemi ~ view),
-        show.legend = FALSE
-      ) +
-      ggplot2::scale_fill_manual(values = ica()$palette, na.value = "grey") +
-      ggplot2::theme_void()
-    vdiffr::expect_doppelganger("ica-2d", p)
+    vdiffr::expect_doppelganger(
+      "ica-2d",
+      ggseg::brain_test_plot(ica())
+    )
   })
 
   it("renders with ggseg3d", {
